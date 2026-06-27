@@ -1,4 +1,4 @@
-// Question 4: Inheritance & Polymorphism (Difficulty: 4/5) ⭐⭐⭐⭐
+
 
 abstract class Vehicle {
   String brand;

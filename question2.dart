@@ -1,18 +1,8 @@
-// Question 2: Collections & Control Flow (Difficulty: 2/5) ⭐⭐
-/**
- * EXPECTED OUTPUT:
- * Student Scores: {Alice: <random>, Bob: <random>, ...}
- * Highest Score: <Name> with <Score>
- * Lowest Score: <Name> with <Score>
- * Average Score: <Value>
- * Alice: <Score> (Category)
- * ...
- */
 
 import 'dart:math';
 
 void main() {
-  // Student names
+  
   List<String> studentNames = [
     "Alice",
     "Bob",
@@ -21,12 +11,12 @@ void main() {
     "Eve"
   ];
 
-  // Student scores
+  
   Map<String, int> studentScores = {};
 
   Random random = Random();
 
-  // Assign random scores (60-100)
+  
   for (String student in studentNames) {
     studentScores[student] = 60 + random.nextInt(41);
   }
@@ -39,7 +29,7 @@ void main() {
 
   int total = 0;
 
-  // Find highest, lowest and average
+  
   studentScores.forEach((student, score) {
     total += score;
 
@@ -61,7 +51,7 @@ void main() {
   print("Lowest Score: $lowestStudent with $lowestScore");
   print("Average Score: ${averageScore.toStringAsFixed(2)}");
 
-  // Category
+  
   for (String student in studentNames) {
     int score = studentScores[student] ?? 0;
     String category = "";

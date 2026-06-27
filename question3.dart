@@ -1,4 +1,4 @@
-// Question 3: Classes & Objects (Difficulty: 3/5) ⭐⭐⭐
+
 
 class BankAccount {
   String accountNumber;
@@ -9,14 +9,13 @@ class BankAccount {
   BankAccount(this.accountNumber, this.accountHolder, this.accountType)
       : balance = 0.0;
 
-  // Deposit money
   void deposit(double amount) {
     if (amount > 0) {
       balance += amount;
     }
   }
 
-  // Withdraw money
+
   void withdraw(double amount) {
     if (balance >= amount) {
       balance -= amount;
@@ -26,12 +25,11 @@ class BankAccount {
     }
   }
 
-  // Return balance
   double getBalance() {
     return balance;
   }
 
-  // Display account information
+
   void displayAccountInfo() {
     print(
         "Account: $accountNumber, Holder: $accountHolder, Type: $accountType, Balance: $balance");
